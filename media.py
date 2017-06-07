@@ -32,7 +32,7 @@ class Movie:
             attribute = attr.replace('_', ' ').replace('url', 'URL')
             value = getattr(self, attr)
             if attr == 'runtime':
-                value = '%s minutes'%value
+                value = '%s minutes' % value
             print('Movie {0} - {1}'.format(attribute, value))
 
     def show_trailer(self):
